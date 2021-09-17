@@ -143,8 +143,8 @@ class User {
         accessTokenSecret,
       );
       return User(params);
-    } on Exception catch (error) {
-      throw Exception(error);
+    } on Exception {
+      rethrow;
     }
   }
 }
